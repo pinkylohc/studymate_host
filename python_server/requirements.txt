@@ -1,0 +1,31 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-openai
+langchain-community
+chromadb
+python-dotenv
+PyMuPDF
+tiktoken
+pypdf
+#for speech-to-text
+SpeechRecognition
+#for video-to-text
+#autotranscribe # need to download a 2.87G package
+#for parsing pdf - precise mode: supports math equations, tables and images
+marker-pdf
+# for parsing other file types: pdf, docx, pptx, xlsx, audio, text-based files
+markitdown
+fpdf
+python-docx
+openai
+pytesseract
+langchain_postgres
+# psycopg2
+psycopg2-binary
+psycopg
+tavily-python
+# agent
+langgraph
+langgraph-checkpoint-postgres

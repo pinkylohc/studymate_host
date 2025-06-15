@@ -1,0 +1,103 @@
+{
+    "quiz": [
+        {
+            "type": "T/F",
+            "question": "Is inheritance a feature of OOP?",
+            "answer": "True",
+            "choices": ["True", "False"],
+            "code": "class Animal: \n def __init__(self, name): \n self.name = name \n class Dog(Animal): \n def bark(self): \n return f\"{self.name} says woof!\" \n dog = Dog(\"Buddy\") \n print(dog.bark())  # Buddy says woof!",
+            "user_answer": ["False"]
+        },
+        {
+            "type": "MC",
+            "question": "Which of the following is not a principle of OOP?",
+            "choices": ["Encapsulation", "Polymorphism", "Abstraction", "Compilation"],
+            "answer": "Compilation",
+            "user_answer": ["Abstraction"]
+        },
+        {
+            "type": "Fill_blank",
+            "question": "The process of hiding the internal details of an object is called ___.",
+            "answer": "Encapsulation",
+            "user_answer": ["idk"]
+        },
+        {
+            "type": "Ordering",
+            "question": "Order the following steps in the process of creating an object in OOP.(Drag and drop from top to bottm)",
+            "choices": ["Define a class", "Use an object", "Define methods", "Create the object"],
+            "answer": ["Define a class", "Define methods", "Create an object", "Use the object"],
+            "user_answer": ["Define a class", "Define methods", "Use an object", "Create the object"]
+        },
+        {
+            "type": "Short_qs",
+            "question": "What is a constructor in a class?",
+            "answer": "A constructor is a special method that is automatically called when an object of a class is created.",
+            "code": "class Person: \n def __init__(self, name, age): \n self.name = name \n self.age = age \n person = Person \n (\"Alice\", 30) \n print(person.name)  # Alice \n print(person.age)   # 30",
+            "user_answer": ["mou"]
+        },
+        {
+            "type": "Long_qs",
+            "question": "Explain the concept of polymorphism in OOP with an example.",
+            "answer": "Polymorphism in OOP is the ability of different objects to respond to the same function call in different ways. For example, a base class 'Shape' might have a method 'draw'. Subclasses like 'Circle' and 'Square' can override the 'draw' method to provide their specific implementations. When you call 'draw' on a 'Shape' object, the correct method for the actual object type (Circle or Square) is called.",
+            "code": "class Shape: \n def draw(self): \n raise NotImplementedError('Subclasses should implement this method') \n class Circle(Shape): \n def draw(self): \n return 'Drawing a circle' \n class Square(Shape): \n def draw(self): \n return 'Drawing a square' \n shapes = [Circle(), Square()] \n for shape in shapes: \n print(shape.draw())",
+            "user_answer": ["it is method that ...."]
+        },
+        {
+            "type": "Short_qs",
+            "question": "What will be the output of the following code?",
+            "answer": "10",
+            "code": "class MyClass: \n def __init__(self, value): \n self.value = value \n def increment(self): \n self.value += 1 \n obj = MyClass(5) \n obj.increment() \n obj.increment() \n print(obj.value)  # What will be the output?",
+            "user_answer": [""]
+        },
+        {
+            "type": "T/F",
+            "question": "Will the following code raise an error?",
+            "answer": "True",
+            "choices": ["True", "False"],
+            "code": "class Base: \n def __init__(self): \n print('Base init') \n class Derived(Base): \n def __init__(self): \n print('Derived init') \n obj = Derived()  # Will this raise an error?",
+            "user_answer": ["True"]
+        }
+    ],
+    
+    "result": {
+        "total_score": "9/20",
+        "result": [
+            {
+                "correct": "1/1",
+                "explanation": "Inheritance is indeed a feature of OOP."
+            },
+            {
+                "correct": "0/1",
+                "explanation": "Compilation is not a principle of OOP."
+            },
+            {
+                "correct": "1/2",
+                "explanation": "Encapsulation is the process of hiding the internal details of an object."
+            },
+            {
+                "correct": "2/4",
+                "explanation": "The correct order is: Define a class, Define methods, Create an object, Use the object."
+            },
+            {
+                "correct": "1/3",
+                "explanation": "A constructor is a special method that is automatically called when an object of a class is created."
+            },
+            {
+                "correct": "2/6",
+                "explanation": "Polymorphism in OOP is the ability of different objects to respond to the same function call in different ways."
+            },
+            {
+                "correct": "2/2",
+                "explanation": "The output of the code is 10."
+            },
+            {
+                "correct": "0/1",
+                "explanation": "The code will raise an error because the Base class constructor is not called in the Derived class."
+            }
+        ]
+    },
+
+    "message": "what's q2?",
+
+    "chatHistory": ["Question 2 asks: \"Which of the following is not a principle of OOP?\" with the choices: Encapsulation, Polymorphism, Abstraction, Compilation."]
+}
